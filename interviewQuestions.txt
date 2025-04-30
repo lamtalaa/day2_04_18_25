@@ -1,0 +1,111 @@
+
+
+
+/// Enums
+In enum we can pass additional values to each case
+
+3 different variations of enum. Simple enum or with associated value or with raw value. Enum cannot have both associated and raw values.
+
+1. Diff b/w class and struct
+ - Classes are reference type, Structs are value type
+ - Classes support inheritance, Struts can not
+ - Classes objects are stored in heap memory, Structs objects are stored in stack memory
+ - Classes objects are mutable by default, Structs objects are immutable by default. To mutate structs objects we need to use keyword Mutating before func.
+ - Structs are faster than Classes. Because since Structs are stored in stack memory which means memory is allocated in a fixed way. While Classes are stored in heap memory which means memory is allocated dynamically.
+
+2. What is reference type and value type. Explain with example
+A reference type shares the same instance, while a value type makes a copy when assigned or passed.
+
+Example for reference type:
+
+class Car {
+    var make = ""
+    var model = ""
+    func printMakeModel () {
+        print(make + " " + model)
+    }
+}
+
+var car1 = Car()
+    car1.make = "Hyundai"
+    car1.model = "Sonata"
+
+var car2 = car1
+
+car2.make = "Toyota"
+car2.model = "Corolla"
+
+car1.printMakeModel()
+car2.printMakeModel()
+
+// output:
+// Toyota Corolla
+// Toyota Corolla
+
+Example for value type:
+
+struct Car {
+    var make = ""
+    var model = ""
+    func printMakeModel () {
+        print(make + " " + model)
+    }
+}
+
+var car1 = Car()
+    car1.make = "Hyundai"
+    car1.model = "Sonata"
+
+var car2 = car1
+
+car2.make = "Toyota"
+car2.model = "Corolla"
+
+car1.printMakeModel()
+car2.printMakeModel()
+
+// output:
+// Hyundai Sonata
+// Toyota Corolla
+
+3. Why is struct faster than class
+Structs are faster because they’re stored on the stack, which is quicker to access and manage than the heap used by classes
+
+4. How to mutate struct
+We add the keyword Mutating before func inside struct.
+
+5. What is the use of Mutating keyword
+Allows us to mutate a struct
+
+6. What is enum
+type that defines a group of related values and enables you to work with those values in a type safe way.
+
+7. What is associated type
+Associated values can be changed dynamically. Raw values cannot be changed.
+
+8. Diff b/w associated type and raw value
+Associated values can be changed dynamically. Raw values cannot be changed.
+
+9. What is protocol
+A protocol defines a blueprint of methods and properties that must be implemented. Any class, struct, or enum that conforms to a protocol is required to provide implementations for those defined requirements
+
+10. What is extension
+It adds new functionality to an existing type such as classes or protocols.
+
+11. What is the use of protocol
+It defines a blueprint of methods and properties that must be implemented
+
+12. How to make function optional in protocol
+Using extension. We put function declaration inside the protocol and function body inside the extension.
+
+13. Diff b/w heap and stack memory
+Stack memory is used for storing local variables and function call data, and it is managed automatically with a last-in, first-out (LIFO) order. It is fast but limited in size.
+
+Heap memory is used for dynamic memory allocation, where memory is allocated at runtime and managed manually or through reference counting (like ARC in Swift); it is slower but more flexible for objects with variable sizes or lifetimes.
+
+14. Where does struct obj get stored and where does class obj get stored
+Struct objects get stored in stack memory while class objects get stored in heap memory 
+
+/// create a calculator class with basic math operations. First define rules using protocol
+
+/// create an integer array and write sorting logic. Use any best sorting algorithm. Don't use built in sort function
