@@ -25,7 +25,7 @@ class Calculator: calculatorOperations {
     }
 }
 
-var number = Calculator()
+var number: calculatorOperations = Calculator()
 print(number.addition(12, 38))
 print(number.subtraction(15, 5))
 print(number.multiplication(5, 8))
