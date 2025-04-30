@@ -25,8 +25,8 @@ class Calculator: calculatorOperations {
     }
 }
 
-var calc: calculatorOperations = Calculator()
-print(calc.addition(10, 20))
-print(calc.subtraction(10, 20))
-print(calc.multiplication(10, 20))
-print(calc.division(10, 20))
+var number = Calculator()
+print(number.addition(12, 38))
+print(number.subtraction(15, 5))
+print(number.multiplication(5, 8))
+print(number.division(40, 10))
