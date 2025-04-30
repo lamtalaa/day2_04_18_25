@@ -99,7 +99,3 @@ Heap memory is used for dynamic memory allocation, where memory is allocated at 
 
 14. Where does struct obj get stored and where does class obj get stored
 Struct objects get stored in stack memory while class objects get stored in heap memory 
-
-/// create a calculator class with basic math operations. First define rules using protocol
-
-/// create an integer array and write sorting logic. Use any best sorting algorithm. Don't use built in sort function
