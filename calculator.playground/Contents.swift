@@ -1,3 +1,4 @@
+/// create a calculator class with basic math operations. First define rules using protocol
 
 protocol calculatorOperations {
     func addition(_ a: Double, _ b: Double) -> Double
