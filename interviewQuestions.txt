@@ -74,10 +74,10 @@ Allows us to mutate a struct
 6. What is enum
 type that defines a group of related values and enables you to work with those values in a type safe way.
 
-7. What is associated type
+7. What is associated value
 An associated value is a value that can be attached to each case of an enum, allowing each case to store different types of data. Associated values can be changed dynamically while raw values cannot be changed.
 
-8. Diff b/w associated type and raw value
+8. Diff b/w associated value and raw value
 Associated values can be changed dynamically. Raw values cannot be changed.
 
 9. What is protocol
